@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jewelry</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h2>Jewelry</h2>
+            <div id="catalog" onclick="openCatalog()"><i class="fa fa-bars" aria-hidden="true"></i> Catalog</div>
+            <div id="list">
+                <h4>Browse by Material:</h4>
+                <ul>
+                    <li class="diamond">Diamond</li>
+                    <li class="gold">Gold</li>
+                    <li class="platinum">Platinum</li>
+                    <li class="silver">Silver</li>
+                </ul>
+                <h4>Browse by Item:</h4>
+                <ul class="items">
+                    <li>Anklet</li>
+                    <li>Bracelet</li>
+                    <li>Bungle</li>
+                    <li>Ear-rings</li>
+                    <li>Necklace</li>
+                    <li>Pendant</li>
+                    <li>Ring</li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <form>
+                <input type="text" placeholder="Search for your favourite design" />
+                <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <p><strong>Popular searches:</strong> necklace, engagement rings, bracelet, platinum rings</p>
+        </section>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+
+        $("#catalog").click(function(){
+            $("#list").slideToggle("fast");
+        });
+
+    </script>
+
+</body>
+</html>
